@@ -1,0 +1,20 @@
+.menu-item {
+    padding: 8px;
+    transition: background-color 200ms ease-in-out 0s;
+    border-radius: 4px;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    align-items: stretch;
+
+    &:hover {
+        background-color: #f8f8f8;
+    }
+
+    &.active {
+        color: var(--default-color-red);
+    }
+}
+.title {
+    margin-left: 8px;
+}

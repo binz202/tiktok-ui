@@ -1,0 +1,105 @@
+.search,
+.search-results {
+    width: 500px;
+}
+.search {
+    position: relative;
+    height: 46px;
+    padding-left: 16px;
+    background-color: #f1f1f2;
+    border-radius: var(--default-border-radius);
+    display: flex;
+    transition: 0.4s;
+    border: 1px solid transparent;
+
+    &:focus-within {
+        border: 1px solid rgba(128, 128, 128, 0.607);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: calc(var(--search-height) - var(--search-top-space) * 2);
+        top: var(--search-top-space);
+        right: var(--search-width-btn);
+        background-color: rgba(22, 24, 35, 0.35);
+    }
+
+    &:hover {
+        border: 1px solid rgba(128, 128, 128, 0.607);
+
+        .search-btn {
+            background-color: #e4e4e6;
+            color: var(--search-hightlight-btn);
+        }
+    }
+
+    input {
+        flex: 1;
+        height: 100%;
+        font-size: 1.6rem;
+        color: #161823;
+        background-color: transparent;
+        width: 300px;
+        padding: 12px 0;
+        caret-color: var(--default-color-red);
+        font-family: var(default-font-family);
+        font-weight: 400;
+        font-size: 16px;
+        padding-right: 40px;
+    }
+    // 12:55
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: var(--search-hightlight-btn);
+    }
+}
+
+.clear,
+.loading {
+    color: #a6a7ab;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(var(--search-width-btn) + 16px);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.loading {
+    animation: spiner 1s linear infinite;
+}
+
+@keyframes spiner {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+.search-btn {
+    width: var(--search-width-btn);
+    height: 100%;
+    border-top-right-radius: var(--default-border-radius);
+    border-bottom-right-radius: var(--default-border-radius);
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: rgba(22, 24, 35, 0.34);
+
+    &:hover {
+        background-color: #e4e4e6;
+        color: var(--search-hightlight-btn);
+    }
+
+    // &:active{
+    //     background-color: #e4e4e6;
+    // }
+}
+.search-title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 5px 12px;
+}

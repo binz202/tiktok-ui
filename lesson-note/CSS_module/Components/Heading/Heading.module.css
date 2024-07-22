@@ -1,0 +1,10 @@
+.heading{
+    color: aqua;
+}
+
+/* css modules: 
+ không dùng thẻ tagName Như :{
+    h1...
+    *...
+ }
+ khi đặt tên đặt theo kiểu : (headingViDu) */

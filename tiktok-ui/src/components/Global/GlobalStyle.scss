@@ -1,0 +1,81 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    //default color
+    --default-color-red: #fe2c55;
+    --default-color-gray: rgb(22, 24, 35);
+    --default-color-gray-real: #e9e9ea2e;
+    --default-color-white: #ffffff;
+    --default-color-border: rgba(22, 24, 35, 0.12);
+
+    //text-color
+    --default-text-color: #333;
+    //font-text
+    --default-font-family: 'IBM Plex Sans', sans-serif;
+
+    // default layout
+    --default-layout-height-header: 60px;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-space: 24px;
+    --default-box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    color: var(--default-text-color);
+    overflow-y: overlay;
+
+    .tippy-box {
+        background-color: #545454eb;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding: 4px;
+    }
+
+    .tippy-arrow {
+        color: #545454eb;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// css Scroll-bar
+html ::-webkit-scrollbar {
+    border-radius: 0px;
+    width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabIndex] {
+    border: none;
+    outline: none;
+}
+a {
+    color: var(--default-text-color);
+    text-decoration: none;
+}
