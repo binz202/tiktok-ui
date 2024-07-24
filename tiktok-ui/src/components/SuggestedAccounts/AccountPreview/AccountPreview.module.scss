@@ -1,0 +1,44 @@
+.wrapper {
+    width: 32rem;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    align-items: center;
+}
+.btn-following {
+    width: 10.6rem;
+    height: 3.2rem;
+    overflow: hidden;
+}
+.body {
+    margin-top: 8px;
+    color: var(--default-color-letter);
+}
+.username {
+}
+.iconcheck {
+    margin-left: 4px;
+    color: var(--default-color-tichxanh);
+}
+.name {
+}
+.thongso {
+    font-size: 17px;
+    color: var(--default-color-letter);
+}
+.value {
+    margin-right: 6px;
+}
+.value ~ .value {
+    margin-left: 12px;
+}
+.label {
+}
+.decibe {
+    border-top: 1px solid var(--default-color-separate);
+    padding-top: 16px;
+    margin-top: 16px;
+}

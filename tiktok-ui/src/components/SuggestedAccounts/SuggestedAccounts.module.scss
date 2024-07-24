@@ -1,0 +1,55 @@
+.wrapper {
+    border-top: 1px solid var(--default-color-separate);
+}
+.label,
+.btn-more {
+    font-size: 1.4rem;
+    padding: 8px;
+}
+
+.btn-more {
+    color: var(--default-color-red);
+    font-weight: 600;
+    line-height: 18px;
+    cursor: pointer;
+}
+.account-item {
+    display: flex;
+    padding: 8px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        transition: background-color 200ms ease-in-out 0s;
+    }
+}
+.avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+.username {
+    align-items: center;
+    color: var(--default-color-gray-real);
+    max-width: 14.5rem;
+}
+.iconcheck {
+    color: var(--default-color-tichxanh);
+    font-size: 14px;
+    margin-left: 4px;
+}
+.name {
+    color: var(--default-color-gray-real);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

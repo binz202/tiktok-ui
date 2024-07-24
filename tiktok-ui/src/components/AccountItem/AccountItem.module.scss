@@ -1,39 +1,37 @@
-.wrapper{
+.wrapper {
     display: flex;
     align-items: center;
     padding: 9px 16px;
     cursor: pointer;
 
-    &:hover{
-        background-color:rgba(22, 24, 35, 0.03);;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
     }
 }
-.avatar{
+.avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
-.info{
+.info {
     flex: 1;
     margin-left: 4px;
-
 }
-.name{
+.name {
     font-style: 1.4rem;
     font-weight: 600;
 
-    span{
+    span {
         margin-right: 4px;
     }
 
-    .check{
-        color: #20D5EC;
+    .check {
+        color: var(--default-color-tichxanh);
         font-size: 1.4rem;
     }
 }
-.username{
+.username {
     font-style: 1.2rem;
     font-weight: 400;
-
 }
